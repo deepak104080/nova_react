@@ -1,3 +1,45 @@
+npm - Node Package Manager
+npx - npm + Some Commands
+
+
+npm install <library name>
+npm install - Install all dependencies
+
+
+
+
+
+Domain Name Registrar
+abc.com - Nameservers (Unique address) - IP
+
+public/public_html - index.html / index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

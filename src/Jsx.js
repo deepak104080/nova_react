@@ -1,8 +1,10 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import './App.css';
 import imageBg from './assets/images/image1.png';
 
-function Jsx() {
+function Jsx(props) {
+    console.log('Props Dataa - ', props);
+    const {dataKey} = props;
     let name = 'NS';
     let num1 = 5;
     let num2 = 6;
@@ -16,6 +18,8 @@ function Jsx() {
     return(
         <>
             <div style={{'background': '#ff0000'}}>My first component.</div>
+            <div>Props Data - {props.dataKey} </div>
+            <div>Props Data - {dataKey} </div>
             <span>{name}</span>
             <span>Sum = {num1+num2}</span>
 
@@ -30,7 +34,7 @@ function Jsx() {
                 
                 {
                     CarArray.map((temp, index) => (
-                        <li key={temp+index} class="listitem">{temp}</li>
+                        <li key={temp+index} className="listitem">{temp}</li>
                     ))
                 }
             </ul>

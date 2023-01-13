@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import Jsx from "./Jsx";
 
 function App() {
     let name  = 'Newton School';
+    let dataToBeSentToChild = 'Data from Parent to Child';
 
     return (
+        <>
+        <Jsx dataKey = {dataToBeSentToChild} dataKey2 = "12345" status={true}/>
         <div className="App">
             <header className="App-header">
                 <p>React Project - Nova Batch 123</p>
@@ -11,6 +15,7 @@ function App() {
                 <div>Name - {name}</div>
             </header>
         </div>
+        </>
     );
 }
 
@@ -34,3 +39,11 @@ export default App;
 
 
 // Routing
+
+
+
+// App - Parent Component
+// Jsx - Child Component
+
+// Props (Object) - way of data transfer from* parent to child
+// State  - 

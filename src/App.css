@@ -13,6 +13,13 @@ body {
   font-size: 55px;
 }
 
+.ownButton {
+  background-color: blueviolet !important;
+  font-size: 55px !important;
+  padding: 50px !important;
+}
+
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

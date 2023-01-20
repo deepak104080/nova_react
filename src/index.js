@@ -10,8 +10,11 @@ import BootstrapReact from './BootstrapReact';
 import State123 from './State';
 import StateRepeat from './StateRepeat';
 import ShowHide from './ShowHide';
+import StateList from './StateList';
+import Parent from './collection/Parent';
+import HomePage from './template/HomePage';
 
 //ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
 const root = ReactDOM.createRoot(document.getElementById('root123'));
-root.render(<ShowHide />);
+root.render(<Parent />);

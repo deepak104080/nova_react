@@ -11,6 +11,7 @@ const StateRepeat = () => {
     //parameter of useState defines the data type of state varibale and the default value of state varibale
     //names can be anything
     //function works in async approach
+    //set method triggers re-rendering of component
 
 
     const increaseFn = () => {

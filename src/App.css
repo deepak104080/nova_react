@@ -19,6 +19,15 @@ body {
   padding: 50px !important;
 }
 
+.menu-item {
+  background-color: rgb(234, 243, 171);
+  border: 1px solid #222222;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 /* body {
   margin: 0;

@@ -4,6 +4,7 @@ import React, {useState} from "react";
 const StateList = () => {
 
     let CarArray = ['Tata', 'Hyundai', 'Suzuki', 'Mahindra', 'Honda', 'Scoda', 'Range Rover'];
+    // let tempToDoList = [{id: '1', task: 'to do 1', status: true}, {id: '2', task: 'to do 2', status: false}]
     const [cars, setCars] = useState(CarArray); //state variable for list of cars
     const [name, setname] = useState('');   //state variable to store input data
 

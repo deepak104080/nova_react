@@ -17,6 +17,7 @@ const MenuBar = (props) => {
         <span className='menu-item'><Link to='http://www.facebook.com'>Facebook&nbsp;&nbsp;</Link></span>
 
         <span className='menu-item'><Link to='/class'>Class&nbsp;&nbsp;</Link></span>
+        <span className='menu-item'><Link to='/lifecycle'>Lifecycle&nbsp;&nbsp;</Link></span>
 
 
 

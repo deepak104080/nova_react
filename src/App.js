@@ -13,6 +13,7 @@ import NotFound from "./NotFound";
 import MenuBar from './MenuBar';
 
 import ClassComp from "./ClassComp";
+import LifeCycle from "./LifeCycle";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
                 <Route path='/parent' element={<Parent/>}/>
                 <Route path='/homepage' element={<HomePage/>}/>
                 <Route path='/class' element={<ClassComp testkey="test value"/>}/>
+                <Route path='/lifecycle' element={<LifeCycle/>}/>
 
 
 

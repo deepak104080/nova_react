@@ -9,9 +9,10 @@ const State123 = () => {
     //we can not modify the value of counter or setcounter directly
     //counter will be that state variable
     //setCounter is a function to update the state variable
+    //set method/function triggers re-rendering on completion
     //parameter of useState defines the data type of state varibale and the default value of state varibale
     //names can be anything
-    //function works in async approach
+    //set function works in async approach
 
     const increaseFn = () => {
         console.log('value increased....')

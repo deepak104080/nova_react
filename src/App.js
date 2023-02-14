@@ -14,6 +14,11 @@ import MenuBar from './MenuBar';
 
 import ClassComp from "./ClassComp";
 import LifeCycle from "./LifeCycle";
+import HookUseEffect from "./Hooks/HookUseEffect";
+
+import Header from "./template/Header";
+import Footer from "./template/Footer";
+import LeftSideBar from "./template/LeftSideBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,28 +27,38 @@ function App() {
 
     return (
         <>
-        <BrowserRouter>
-            <MenuBar/>
-            <Routes>
-                <Route path='/home111' element={<Home1111/>}/>
-                <Route path='/jsx' element={<Jsx/>}/>
-                <Route path='/bootstrap' element={<Bootstrap/>}/>
-                <Route path='/bootstrapreact' element={<BootstrapReact/>}/>
-                <Route path='/state123' element={<State123/>}/>
-                <Route path='/staterepeat' element={<StateRepeat/>}/>
-                <Route path='/showhide' element={<ShowHide/>}/>
-                <Route path='/statelist' element={<StateList/>}/>
-                <Route path='/parent' element={<Parent/>}/>
-                <Route path='/homepage' element={<HomePage/>}/>
-                <Route path='/class' element={<ClassComp testkey="test value"/>}/>
-                <Route path='/lifecycle' element={<LifeCycle/>}/>
+        <div className="container">
+            
+            <BrowserRouter>
+                <Header/>
+                <MenuBar/>
+                <div className="row bg-warning-subtle">
+                    <LeftSideBar/>
+                    
+                    <div className="col-9 bg-info-subtle">
+                    <Routes>
+                        <Route path='/home111' element={<Home1111/>}/>
+                        <Route path='/jsx' element={<Jsx/>}/>
+                        <Route path='/bootstrap' element={<Bootstrap/>}/>
+                        <Route path='/bootstrapreact' element={<BootstrapReact/>}/>
+                        <Route path='/state123' element={<State123/>}/>
+                        <Route path='/staterepeat' element={<StateRepeat/>}/>
+                        <Route path='/showhide' element={<ShowHide/>}/>
+                        <Route path='/statelist' element={<StateList/>}/>
+                        <Route path='/parent' element={<Parent/>}/>
+                        <Route path='/homepage' element={<HomePage/>}/>
+                        <Route path='/class' element={<ClassComp testkey="test value"/>}/>
+                        <Route path='/lifecycle' element={<LifeCycle/>}/>
+                        <Route path='/hookuseeffect' element={<HookUseEffect/>}/>
 
-
-
-                <Route path='/' element={<HomePage/>}/>
-                <Route path='/*' element={<NotFound/>}/>
-            </Routes>
-        </BrowserRouter>
+                        <Route path='/' element={<HomePage/>}/>
+                        <Route path='/*' element={<NotFound/>}/>
+                    </Routes>
+                    </div>
+                </div>
+                <Footer/>
+            </BrowserRouter>
+        </div>
 
         {/* <Jsx dataKey = {dataToBeSentToChild} dataKey2 = "12345" status={true}/>
         <div className="App">

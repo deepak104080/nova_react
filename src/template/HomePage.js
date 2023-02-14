@@ -6,10 +6,10 @@ import MainContent from './MainContent';
 
 const HomePage = () => {
   return (
-    <div>
+    <>
         <div className="container">
             <Header/>
-
+            {/* menubar */}
             <div className="row bg-warning-subtle">
                 <LeftSideBar/>
                 <MainContent/>
@@ -17,7 +17,7 @@ const HomePage = () => {
 
             <Footer/>
         </div>
-    </div>
+    </>
   )
 }
 

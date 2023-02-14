@@ -16,6 +16,11 @@ public/public_html - index.html / index
 
 
 
+React Version 16.8 - Hooks (use)
+State - useState
+Lifecycle - useEffect
+
+
 
 
 

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 const StateList = () => {
@@ -12,7 +12,12 @@ const StateList = () => {
         // console.log('added in list...', e.target);
         let tempArr = [...cars, name];
         setCars(tempArr);
+        // console.log(cars);
     }
+
+    useEffect(() => {
+        console.log('cars - ', cars);
+    }, [cars])
 
     const saveInState = (e) => {
         // console.log('Typed - ', e.target.value);
@@ -24,8 +29,8 @@ const StateList = () => {
             <h2>State List</h2>
             <ul>
                 {
-                    cars.map((item) => (
-                            <li>{item}
+                    cars.map((item, index) => (
+                            <li key={item+index}>{item}
                                 {/* <button>Delete</button> */}
                             </li>
                         ))

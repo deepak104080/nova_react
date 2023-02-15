@@ -15,6 +15,7 @@ import MenuBar from './MenuBar';
 import ClassComp from "./ClassComp";
 import LifeCycle from "./LifeCycle";
 import HookUseEffect from "./Hooks/HookUseEffect";
+import APIwithUseEffect from "./APIwithUseEffect";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -50,6 +51,7 @@ function App() {
                         <Route path='/class' element={<ClassComp testkey="test value"/>}/>
                         <Route path='/lifecycle' element={<LifeCycle/>}/>
                         <Route path='/hookuseeffect' element={<HookUseEffect/>}/>
+                        <Route path='/api' element={<APIwithUseEffect/>}/>
 
                         <Route path='/' element={<HomePage/>}/>
                         <Route path='/*' element={<NotFound/>}/>

@@ -27,6 +27,8 @@ const MenuBar = (props) => {
         <li className="nav-item"><Link to='/lifecycle'>Lifecycle</Link></li>
         <li className="nav-item"><Link to='/hookuseeffect'>HookUseEffect&nbsp;&nbsp;</Link></li>
         <li className="nav-item"><Link to='/api'>API</Link></li>
+        <li className="nav-item"><Link to='/form'>  Form   </Link></li>
+        <li className="nav-item"><Link to='/formcomplete'>  Form  2 </Link></li>
       </ul>
     </div>
   </div>

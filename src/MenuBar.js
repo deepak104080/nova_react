@@ -3,36 +3,42 @@ import {Link} from 'react-router-dom';
 
 const MenuBar = (props) => {
   return (
-
+    <>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item"><Link to='/home111' className="nav-link">Home111</Link></li>
+            <li className="nav-item"><Link to='/jsx' className="nav-link">Jsx</Link></li>
+            <li className="nav-item"><Link to='/bootstrap' className="nav-link">Bootstrap</Link></li>
+            <li className="nav-item"><Link to='/bootstrapreact' className="nav-link">BootstrapReact</Link></li>
+            <li className="nav-item"><Link to='/state123' className="nav-link">State123</Link></li>
+            <li className="nav-item"><Link to='/staterepeat' className="nav-link">StateRepeat</Link></li>
+            <li className="nav-item"><Link to='/showhide' className="nav-link">ShowHide</Link></li>
+            <li className="nav-item"><Link to='/statelist' className="nav-link">Statelist</Link></li>
+            <li className="nav-item"><Link to='/parent' className="nav-link">Parent</Link></li>
+            <li className="nav-item"><Link to='/homepage' className="nav-link">HomePage</Link></li>
+            <li className="nav-item"><Link to='/class' className="nav-link">Class</Link></li>
+            <li className="nav-item"><Link to='/lifecycle' className="nav-link">Lifecycle</Link></li>
+            <li className="nav-item"><Link to='/hookuseeffect' className="nav-link">HookUseEffect</Link></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li class="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-        <Link to='/home111'>Home111</Link>
-        </li>
-        <li className="nav-item">
-        <Link to='/jsx'>Jsx&nbsp;&nbsp;</Link>
-        </li>
-        <li className="nav-item"><Link to='/state123'>State123&nbsp;&nbsp;</Link></li>
-        <li className="nav-item"><Link to='/statelist'>Statelist</Link></li>
-        <li className="nav-item"><Link to='/lifecycle'>Lifecycle</Link></li>
-        <li className="nav-item"><Link to='/hookuseeffect'>HookUseEffect&nbsp;&nbsp;</Link></li>
-        <li className="nav-item"><Link to='/api'>API</Link></li>
-        <li className="nav-item"><Link to='/form'>  Form   </Link></li>
-        <li className="nav-item"><Link to='/formcomplete'>  Form  2 </Link></li>
-      </ul>
+    <div className="container-fluid">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item"><Link to='/api' className="nav-link">API</Link></li>
+          <li className="nav-item"><Link to='/form' className="nav-link">  Form   </Link></li>
+          <li className="nav-item"><Link to='/formcomplete' className="nav-link">  Form  2 </Link></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+    </nav>
+  </>
+
 
     // <div>
     //     <span className='menu-item'><Link to='/home111'>Home111&nbsp;&nbsp;</Link></span>

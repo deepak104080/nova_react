@@ -18,6 +18,7 @@ import HookUseEffect from "./Hooks/HookUseEffect";
 import APIwithUseEffect from "./APIwithUseEffect";
 import Form from "./Form";
 import FormComplete from "./FormComplete";
+import EMI from "./lift_state/EMI";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -56,6 +57,7 @@ function App() {
                         <Route path='/api' element={<APIwithUseEffect/>}/>
                         <Route path='/form' element={<Form/>}/>
                         <Route path='/formcomplete' element={<FormComplete/>}/>
+                        <Route path='/emi' element={<EMI/>}/>
 
                         <Route path='/' element={<HomePage/>}/>
                         <Route path='/*' element={<NotFound/>}/>

@@ -33,6 +33,7 @@ const MenuBar = (props) => {
           <li className="nav-item"><Link to='/api' className="nav-link">API</Link></li>
           <li className="nav-item"><Link to='/form' className="nav-link">  Form   </Link></li>
           <li className="nav-item"><Link to='/formcomplete' className="nav-link">  Form  2 </Link></li>
+          <li className="nav-item"><Link to='/emi' className="nav-link"> EMI </Link></li>
         </ul>
       </div>
     </div>

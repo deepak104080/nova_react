@@ -36,6 +36,8 @@ const HookUseEffect = () => {
         return () => {
             console.log('componentWillUnmount')
         }
+        //cleanup works
+        //clearInterval, clearTimeout
     }, [])
 
 

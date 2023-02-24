@@ -19,6 +19,8 @@ import APIwithUseEffect from "./APIwithUseEffect";
 import Form from "./Form";
 import FormComplete from "./FormComplete";
 import EMI from "./lift_state/EMI";
+import ParentProps from "./propsdrilling/ParentProps";
+import ParentContext from "./context/ParentContext";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -58,6 +60,8 @@ function App() {
                         <Route path='/form' element={<Form/>}/>
                         <Route path='/formcomplete' element={<FormComplete/>}/>
                         <Route path='/emi' element={<EMI/>}/>
+                        <Route path='/parentprops' element={<ParentProps/>}/>
+                        <Route path='/parentcontext' element={<ParentContext/>}/>
 
                         <Route path='/' element={<HomePage/>}/>
                         <Route path='/*' element={<NotFound/>}/>

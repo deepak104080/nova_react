@@ -28,6 +28,11 @@ body {
   text-decoration: none;
 }
 
+.drillingComp {
+  border: 1px solid #bd2626;
+  padding: 10px;
+  background-color: rgba(40, 200, 20, 0.2);
+}
 
 /* body {
   margin: 0;

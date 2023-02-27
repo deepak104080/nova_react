@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
 const MenuBar = (props) => {
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className='row bg-success-subtle'>
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
@@ -26,7 +27,7 @@ const MenuBar = (props) => {
       </div>
     </nav>
 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
     <div className="container-fluid">
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
@@ -40,6 +41,7 @@ const MenuBar = (props) => {
       </div>
     </div>
     </nav>
+    </div>
   </>
 
 

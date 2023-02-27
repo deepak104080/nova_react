@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import {DataAppContext} from './DataApp';
 
 function Home1111() {
+    const localGlobalContext = useContext(DataAppContext);
     let name  = 'Newton School';
     return (
         <div className="App">
@@ -8,6 +10,9 @@ function Home1111() {
                 <p>React Project - Nova Batch 123</p>
                 <br></br>
                 <div>name</div>
+                <br></br>
+                <br></br>
+                <div>{localGlobalContext.appState.loginStatus && <h2>Yeahhh. I am logged in.</h2>}</div>
             </header>
         </div>
     );

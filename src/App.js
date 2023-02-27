@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Home1111 from './Home';
 import Jsx from './Jsx';
 import Bootstrap from './Bootstrap';
@@ -26,6 +26,7 @@ import Header from "./template/Header";
 import Footer from "./template/Footer";
 import LeftSideBar from "./template/LeftSideBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DataApp, {DataAppContext} from "./DataApp";
 
 function App() {
     let name  = 'Newton School';
@@ -33,44 +34,43 @@ function App() {
 
     return (
         <>
-        <div className="container">
-            
             <BrowserRouter>
-                <Header/>
-                <MenuBar/>
-                <div className="row bg-warning-subtle">
-                    <LeftSideBar/>
-                    
-                    <div className="col-9 bg-info-subtle">
-                    <Routes>
-                        <Route path='/home111' element={<Home1111/>}/>
-                        <Route path='/jsx' element={<Jsx/>}/>
-                        <Route path='/bootstrap' element={<Bootstrap/>}/>
-                        <Route path='/bootstrapreact' element={<BootstrapReact/>}/>
-                        <Route path='/state123' element={<State123/>}/>
-                        <Route path='/staterepeat' element={<StateRepeat/>}/>
-                        <Route path='/showhide' element={<ShowHide/>}/>
-                        <Route path='/statelist' element={<StateList/>}/>
-                        <Route path='/parent' element={<Parent/>}/>
-                        <Route path='/homepage' element={<HomePage/>}/>
-                        <Route path='/class' element={<ClassComp testkey="test value"/>}/>
-                        <Route path='/lifecycle' element={<LifeCycle/>}/>
-                        <Route path='/hookuseeffect' element={<HookUseEffect/>}/>
-                        <Route path='/api' element={<APIwithUseEffect/>}/>
-                        <Route path='/form' element={<Form/>}/>
-                        <Route path='/formcomplete' element={<FormComplete/>}/>
-                        <Route path='/emi' element={<EMI/>}/>
-                        <Route path='/parentprops' element={<ParentProps/>}/>
-                        <Route path='/parentcontext' element={<ParentContext/>}/>
+                <DataApp>
+                        <Header/>
+                        <MenuBar/>
+                        <div className="row bg-warning-subtle">
+                            <LeftSideBar/>
+                            
+                            <div className="col-9 bg-info-subtle">
+                            <Routes>
+                                <Route path='/home111' element={<Home1111/>}/>
+                                <Route path='/jsx' element={<Jsx/>}/>
+                                <Route path='/bootstrap' element={<Bootstrap/>}/>
+                                <Route path='/bootstrapreact' element={<BootstrapReact/>}/>
+                                <Route path='/state123' element={<State123/>}/>
+                                <Route path='/staterepeat' element={<StateRepeat/>}/>
+                                <Route path='/showhide' element={<ShowHide/>}/>
+                                <Route path='/statelist' element={<StateList/>}/>
+                                <Route path='/parent' element={<Parent/>}/>
+                                <Route path='/homepage' element={<HomePage/>}/>
+                                <Route path='/class' element={<ClassComp testkey="test value"/>}/>
+                                <Route path='/lifecycle' element={<LifeCycle/>}/>
+                                <Route path='/hookuseeffect' element={<HookUseEffect/>}/>
+                                <Route path='/api' element={<APIwithUseEffect/>}/>
+                                <Route path='/form' element={<Form/>}/>
+                                <Route path='/formcomplete' element={<FormComplete/>}/>
+                                <Route path='/emi' element={<EMI/>}/>
+                                <Route path='/parentprops' element={<ParentProps/>}/>
+                                <Route path='/parentcontext' element={<ParentContext/>}/>
 
-                        <Route path='/' element={<HomePage/>}/>
-                        <Route path='/*' element={<NotFound/>}/>
-                    </Routes>
-                    </div>
-                </div>
-                <Footer/>
+                                <Route path='/' element={<HomePage/>}/>
+                                <Route path='/*' element={<NotFound/>}/>
+                            </Routes>
+                            </div>
+                        </div>
+                        <Footer/>
+                </DataApp>
             </BrowserRouter>
-        </div>
 
         {/* <Jsx dataKey = {dataToBeSentToChild} dataKey2 = "12345" status={true}/>
         <div className="App">

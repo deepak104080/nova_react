@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataParentContext } from './ParentContext';
+import ChildDClassContext from './ChildDClassContext';
 
 const ChildCContext = () => {
 
@@ -14,6 +15,10 @@ const ChildCContext = () => {
                     <h4>{contextData}</h4>
                     <br></br><br></br>
                     <input type="text" onBlur={(event) => setContextData(event.target.value)} />
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <ChildDClassContext/>
                 </div>
         </div>
     )

@@ -21,6 +21,7 @@ import FormComplete from "./FormComplete";
 import EMI from "./lift_state/EMI";
 import ParentProps from "./propsdrilling/ParentProps";
 import ParentContext from "./context/ParentContext";
+import HookUseReducer from "./Hooks/HookUseReducer";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -62,6 +63,7 @@ function App() {
                                 <Route path='/emi' element={<EMI/>}/>
                                 <Route path='/parentprops' element={<ParentProps/>}/>
                                 <Route path='/parentcontext' element={<ParentContext/>}/>
+                                <Route path='/hookusereducer' element={<HookUseReducer/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

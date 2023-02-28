@@ -17,7 +17,7 @@ const DataApp = (props) => {
 
     return(
         <>
-            <DataAppContext.Provider value={{appState, setAppState}}>
+            <DataAppContext.Provider value={{appState, setAppState }}>
                 <div className="container-fluid" style={{'background': appState.bgColor ? '#111111' : '#eeeeee'}}>
                     <div className="container">
                         {props.children}
@@ -41,3 +41,13 @@ export default DataApp;
 //shifting warpper to different file
 //login management with context
 //theme togle using context
+
+
+//  limitations
+// all componnets render everytime
+// single file to store all context values - in form of state
+// scalibility - 100+ components - context value can be huge and complex to manage
+
+
+
+//Redux - useReducer Hook

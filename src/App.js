@@ -22,6 +22,8 @@ import EMI from "./lift_state/EMI";
 import ParentProps from "./propsdrilling/ParentProps";
 import ParentContext from "./context/ParentContext";
 import HookUseReducer from "./Hooks/HookUseReducer";
+import RefFn from "./ref/RefFn";
+import RefClass from "./ref/RefClass";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -64,6 +66,8 @@ function App() {
                                 <Route path='/parentprops' element={<ParentProps/>}/>
                                 <Route path='/parentcontext' element={<ParentContext/>}/>
                                 <Route path='/hookusereducer' element={<HookUseReducer/>}/>
+                                <Route path='/reffn' element={<RefFn/>}/>
+                                <Route path='/refclass' element={<RefClass/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

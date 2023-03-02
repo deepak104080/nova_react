@@ -38,6 +38,8 @@ const MenuBar = (props) => {
           <li className="nav-item"><Link to='/parentprops' className="nav-link"> Props Drilling </Link></li>
           <li className="nav-item"><Link to='/parentcontext' className="nav-link"> Context </Link></li>
           <li className="nav-item"><Link to='/hookusereducer' className="nav-link"> HookUseReducer </Link></li>
+          <li className="nav-item"><Link to='/reffn' className="nav-link"> Ref Fn </Link></li>
+          <li className="nav-item"><Link to='/refclass' className="nav-link"> Ref Class </Link></li>
         </ul>
       </div>
     </div>

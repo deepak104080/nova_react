@@ -24,6 +24,7 @@ import ParentContext from "./context/ParentContext";
 import HookUseReducer from "./Hooks/HookUseReducer";
 import RefFn from "./ref/RefFn";
 import RefClass from "./ref/RefClass";
+import Portal from "./modal/Portal";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -68,6 +69,7 @@ function App() {
                                 <Route path='/hookusereducer' element={<HookUseReducer/>}/>
                                 <Route path='/reffn' element={<RefFn/>}/>
                                 <Route path='/refclass' element={<RefClass/>}/>
+                                <Route path='/portal' element={<Portal/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

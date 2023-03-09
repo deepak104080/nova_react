@@ -40,6 +40,7 @@ const MenuBar = (props) => {
           <li className="nav-item"><Link to='/hookusereducer' className="nav-link"> HookUseReducer </Link></li>
           <li className="nav-item"><Link to='/reffn' className="nav-link"> Ref Fn </Link></li>
           <li className="nav-item"><Link to='/refclass' className="nav-link"> Ref Class </Link></li>
+          <li className="nav-item"><Link to='/portal' className="nav-link">Portal</Link></li>
         </ul>
       </div>
     </div>

@@ -16,5 +16,5 @@ import App from './App';
 
 //ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
-const root = ReactDOM.createRoot(document.getElementById('root123'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

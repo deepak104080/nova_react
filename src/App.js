@@ -26,6 +26,11 @@ import RefFn from "./ref/RefFn";
 import RefClass from "./ref/RefClass";
 import Portal from "./modal/Portal";
 
+import ProductCategory from "./products/ProductCategory";
+import ProductDetail from "./products/ProductDetail";
+import Login from "./login/Login";
+import Dashboard from "./login/Dashboard";
+
 import Header from "./template/Header";
 import Footer from "./template/Footer";
 import LeftSideBar from "./template/LeftSideBar";
@@ -70,6 +75,10 @@ function App() {
                                 <Route path='/reffn' element={<RefFn/>}/>
                                 <Route path='/refclass' element={<RefClass/>}/>
                                 <Route path='/portal' element={<Portal/>}/>
+                                <Route path='/category' element={<ProductCategory/>}/>
+                                <Route path='/product/:id' element={<ProductDetail/>}/>
+                                <Route path='/login' element={<Login/>}/>
+                                <Route path='/dashboard' element={<Dashboard/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

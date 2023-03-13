@@ -30,6 +30,8 @@ import ProductCategory from "./products/ProductCategory";
 import ProductDetail from "./products/ProductDetail";
 import Login from "./login/Login";
 import Dashboard from "./login/Dashboard";
+import HOC_Country from "./hoc/HOC_Country";
+import HOC_State from "./hoc/HOC_State";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -79,6 +81,8 @@ function App() {
                                 <Route path='/product/:id' element={<ProductDetail/>}/>
                                 <Route path='/login' element={<Login/>}/>
                                 <Route path='/dashboard' element={<Dashboard/>}/>
+                                <Route path='/hoc_country' element={<HOC_Country/>}/>
+                                <Route path='/hoc_state' element={<HOC_State/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

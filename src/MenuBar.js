@@ -43,6 +43,8 @@ const MenuBar = (props) => {
           <li className="nav-item"><Link to='/portal' className="nav-link">Portal</Link></li>
           <li className="nav-item"><Link to='/category' className="nav-link">Category</Link></li>
           <li className="nav-item"><Link to='/login' className="nav-link">Login</Link></li>
+          <li className="nav-item"><Link to='/hoc_country' className="nav-link">HOC Country</Link></li>
+          <li className="nav-item"><Link to='/hoc_state' className="nav-link">HOC State</Link></li>
         </ul>
       </div>
     </div>

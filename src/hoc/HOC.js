@@ -5,15 +5,27 @@ const withFilter = (InputComponent, data) => {
         constructor() {
             super();
             this.state = {
-                tempinput: '',
-                datalist: data,
-                originaldatlist: data
+                tempinput: '', //to handle temporary input for filter text
+                datalist: data, //to store filtered list
+                originaldatlist: data //to store original list
             }
         }
 
 
         filterFn = (e) => {
+            let tempArray = this.state.originaldatlist.filter((item) => {
+                return item.indexOf(e.target.value) >= 0;
+            })
 
+            console.log(tempArray);
+
+
+
+            this.setState({
+                ...this.state,
+                tempinput: e.target.value,
+                datalist: tempArray
+            })
         }
 
 
@@ -23,7 +35,7 @@ const withFilter = (InputComponent, data) => {
                 <br></br>
                 <input type="text" onChange={(e) => this.filterFn(e)} value={this.state.tempinput}/>
                 <br></br>
-                <InputComponent />
+                <InputComponent list={this.state.datalist} />
                 </>
             )
         }

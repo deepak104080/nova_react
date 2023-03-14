@@ -32,6 +32,8 @@ import Login from "./login/Login";
 import Dashboard from "./login/Dashboard";
 import HOC_Country from "./hoc/HOC_Country";
 import HOC_State from "./hoc/HOC_State";
+import HookMemo from "./Hooks/HookMemo";
+import HookCallback from "./Hooks/HookCallback";
 
 import Header from "./template/Header";
 import Footer from "./template/Footer";
@@ -83,6 +85,8 @@ function App() {
                                 <Route path='/dashboard' element={<Dashboard/>}/>
                                 <Route path='/hoc_country' element={<HOC_Country/>}/>
                                 <Route path='/hoc_state' element={<HOC_State/>}/>
+                                <Route path='/hookmemo' element={<HookMemo/>}/>
+                                <Route path='/hookcallback' element={<HookCallback/>}/>
 
                                 <Route path='/' element={<HomePage/>}/>
                                 <Route path='/*' element={<NotFound/>}/>

@@ -45,6 +45,18 @@ const MenuBar = (props) => {
           <li className="nav-item"><Link to='/login' className="nav-link">Login</Link></li>
           <li className="nav-item"><Link to='/hoc_country' className="nav-link">HOC Country</Link></li>
           <li className="nav-item"><Link to='/hoc_state' className="nav-link">HOC State</Link></li>
+          <li className="nav-item"><Link to='/hookmemo' className="nav-link">Hook Memo</Link></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <nav className="navbar navbar-expand-lg">
+    <div className="container-fluid">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item"><Link to='/hookcallback' className="nav-link">Hook Callback</Link></li>
+          
         </ul>
       </div>
     </div>

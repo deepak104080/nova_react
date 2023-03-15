@@ -7,7 +7,7 @@ const HookCallbackChild = (props) => {
 
     return (
         <div>
-            <input type="text" onBlur={updateList} />
+            <button onClick={updateList}>Add in List</button>
             {
                     list && list.map((item, index) => (
                         <div key={item+index}>{item}</div>

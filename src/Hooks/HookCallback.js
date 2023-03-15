@@ -13,6 +13,10 @@ const HookCallback = () => {
         setChild((child) => [...child, 'NewVal'])
     }, [child])
 
+    // const updateList = () => {
+    //     setChild((child) => [...child, 'NewVal'])
+    // }
+
     return (
         <div>
             <div>
